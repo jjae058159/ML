@@ -1,0 +1,24 @@
+import numpy as np
+
+org_array = np.array([ 3, 1, 9, 5]) 
+sort_indices = np.argsort(org_array)
+print(org_array) #array 값은 안바뀜
+print(sort_indices) #index만 오름차순에 맞추어 바뀜
+
+print('-------------------------')
+
+reverse_argsort_indices = np.argsort(org_array)[::-1]
+print(org_array) #array 값은 안바뀜
+print(reverse_argsort_indices) #index만 오름차순에 맞추어 바뀜
+
+print('ex ex ex ex ex ex ex ex ex ex ex ex ex ex ex ex ')
+name_array = np.array(['John', 'Mike', 'Sarah', 'Kate', 'Samuel'])
+score_array= np.array([78, 95, 84, 98, 88])
+
+sort_score_array = np.sort(score_array)
+sort_indices = np.argsort(score_array)
+
+sort_name = name_array[sort_indices]
+
+print(sort_score_array)
+print(sort_name)

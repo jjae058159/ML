@@ -1,0 +1,15 @@
+import numpy as np
+
+seq_array = np.arange(10)
+print(seq_array)
+print(seq_array.dtype, seq_array.shape)
+
+zero_array = np.zeros((3, 2), np.dtype('int32'))
+print(zero_array)
+print(zero_array.dtype, zero_array.shape)
+
+one_array = np.ones((3, 2))
+print(one_array)
+print(one_array.dtype, one_array.shape)
+print(one_array.astype('int32'))
+print(one_array.dtype, one_array.shape)

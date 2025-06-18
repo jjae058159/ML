@@ -1,0 +1,26 @@
+import numpy as np
+
+array1 = np.arange(10)
+print(array1)
+
+array2 = array1.reshape(2, 5)
+print(array2)
+
+array3 = array2.reshape(5, 2)
+print(array3)
+
+array4 = array1.reshape(-1, 5)
+print(array4)
+
+array5 = array4.reshape(5, -1)
+print(array5)
+
+array01 = np.arange(8)
+array02 = array01.reshape((2, 2, 2))
+print(array02, array02.shape)
+
+array03 = array02.reshape(-1, 1)
+print(array03, array03.shape)
+
+array04 = array01.reshape(-1, 1)
+print(array04, array04.shape)

@@ -1,0 +1,20 @@
+import numpy as np
+
+org_array = np.array([3, 1, 5, 9])
+print(org_array)
+sort_array1 = np.sort(org_array)
+print(sort_array1) 
+print(org_array) #안바뀜
+
+sort_array2 = org_array.sort()
+print(sort_array2)
+print(org_array) #바뀜
+
+rev_sort_array = np.sort(org_array)[::-1]
+print(rev_sort_array)
+
+array2d = np.array([[8, 12], [7, 1 ]])
+sort_array2d = np.sort(array2d, axis = 0)
+sort_array2d1 = np.sort(array2d, axis = 1)
+print(sort_array2d)
+print(sort_array2d1)
